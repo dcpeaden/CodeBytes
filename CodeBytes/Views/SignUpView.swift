@@ -120,3 +120,13 @@ struct SignUpView: View {
       .preferredColorScheme(.dark)
     }
 }
+
+#if DEBUG
+struct SignUpView_Previews: PreviewProvider {
+    static var previews: some View {
+        SignUpView(
+          currentViewShowing: .constant("signup")
+        )
+    }
+}
+#endif
